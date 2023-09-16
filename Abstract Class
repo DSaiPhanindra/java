@@ -1,0 +1,25 @@
+//java program to demonistrate abstract class
+//02-09-2023
+//AbstractDemo.java
+import java.io.*;
+abstract class Animal
+{  
+   public abstract void animalSound();
+   public void eat(){
+   System.out.println("I can eat");
+   }  
+}
+class Cow extends Animal
+{
+    public void animalSound(){
+        System.out.println("Cow sounds maa");
+    }
+}
+public class AbstractDemo
+{
+    public static void main(String args[]){
+        Cow c = new Cow();
+        c.animalSound();
+        c.eat();
+    }
+}
