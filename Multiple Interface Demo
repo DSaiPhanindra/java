@@ -1,0 +1,25 @@
+//java program to demonistrate Multiple Interface.
+//07-10-2023
+//MultipleInterfaceDemo.java
+import java.io.*;
+import java.util.*;
+
+interface Printable{
+    void print();
+}
+interface Showable{
+    void Show();
+}
+public class MultipleInterfaceDemo{
+    public void print(){
+        System.out.println("Print Method");
+    }
+    public void show(){
+        System.out.println("Show Method ");
+    }
+    public static void main(String args[]) {
+        MultipleInterfaceDemo mid=new MultipleInterfaceDemo();
+        mid.show();
+        mid.print();
+    }
+}
