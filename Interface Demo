@@ -1,0 +1,27 @@
+//java program to demonistrate Interface.
+//07-10-2023
+//InterfaceDemo.java
+import java.io.*;
+import java.util.*;
+
+interface Drawable{
+    void draw();
+}
+class Rectangle implements Drawable{
+    public void draw(){
+        System.out.println("Drawing Rectangle");
+    }
+}
+class Circle implements Drawable{
+    public void draw(){
+        System.out.println("Drawing Circle");
+    }
+}
+public class InterfaceDemo{
+    public static void main(String args[]) {
+        Drawable c=new Circle();
+        c.draw();
+        Drawable r=new Rectangle();
+        r.draw();
+    }
+}
