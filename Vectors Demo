@@ -1,0 +1,17 @@
+//java program to demonstrate vector.
+//07-10-2023
+//VectorDemo.java
+import java.io.*;
+import java.util.*;
+public class VectorDemo{
+    public static void main(String args[]) {
+        Vector<String> vec=new Vector<String>();
+        vec.add("Sai Ram");
+        vec.add("64");
+        vec.add("Rolex");
+        vec.add("32");
+        vec.add("Nag Sai");
+        vec.add("Shanmuk");
+        System.out.println("The Elements of Vector are" + vec);
+    }
+}
